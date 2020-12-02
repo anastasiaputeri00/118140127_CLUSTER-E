@@ -1,0 +1,97 @@
+$mycolor: rgb(95, 223, 255);
+$bgcolour: #333;
+$number1: 20px;
+$align1:center;
+
+.header {
+    background-color: #ffe4e1;
+    padding: 2px;
+    font-size: 24px;
+}
+.content {
+    h2{
+        font-size: 22pt;
+    }
+    p{
+         font-size: 18px;
+    }
+}
+.navbar {
+    font-size: 20px;
+    ul{
+        li{
+        float: right;
+        margin-right: $number1;
+        }
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $bgcolour;
+    }
+    li{
+        float: right;
+        margin-right: $number1;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: $align1;
+        padding: 14px $number1;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: $mycolor;
+    }
+}
+.sidebar{
+    float: left;
+    height: auto;
+    width: 250px;
+    background-color: #ffe4e1;
+    padding: {
+        top: 100px;
+        bottom: 500px;
+        right: 40px;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        width: 250px;
+        text-align: center;
+        background-color: #ffe4e1;
+        overflow: hidden;
+        margin: {
+            top :20px;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+        }
+    }
+    li{
+        a { 
+            display: block;
+            color: #000;
+            padding: 10px 16px;
+            width: 250px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    }
+    li{
+        a:hover {
+            background-color: #555;
+            color: white;
+        }
+    }
+}
+.footer {
+    background-color: $bgcolour;
+    color: white;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    line-height: 50px;
+  }
